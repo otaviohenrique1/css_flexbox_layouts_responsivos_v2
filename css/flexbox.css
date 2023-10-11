@@ -1,0 +1,43 @@
+/* Cabecalho */
+.cabecalho__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.cabecalho__pesquisar__item {
+  display: none;
+}
+
+/* Superior Secao */
+.superior__secao__container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  /* white-space: nowrap; => Nao quebra a linha das palavras */
+}
+
+/* Rodape */
+.rodape__container {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap; => Quebra de coluna em linhas */
+  flex-flow: column wrap;
+  /* flex-flow => Junta o 'flex-direction' com o 'flex-wrap' */
+}
+
+@media (min-width: 834px) {
+
+  /* Cabecalho */
+  .cabecalho__pesquisar__item {
+    display: block;
+  }
+
+  /* Rodape */
+  .rodape__container {
+    justify-content: space-between;
+  }
+}
